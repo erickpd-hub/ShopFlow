@@ -6,10 +6,11 @@ Este repositorio está listo para ser desplegado en **Vercel**. Sigue estos paso
 - Sube los últimos cambios a tu repositorio:
   ```bash
   git add .
-  git commit -m "build: fix validator types for deployment"
+  git commit -m "build: convert to Vite for Vercel deployment"
   git push origin main
   ```
 - En el dashboard de Vercel, selecciona **"Import Project"** y elige tu repositorio `ShopFlow`.
+- **IMPORTANTE**: Asegúrate de que el **Framework Preset** en Vercel esté seleccionado como **Vite**. La carpeta de salida (`Output Directory`) debe ser `dist`.
 
 ## 2. Configurar Variables de Entorno
 Copia los valores de tu archivo `.env.local` al panel de Vercel en `Settings > Environment Variables`. Estas son las obligatorias:
