@@ -63,12 +63,12 @@ export async function validateThemePackage(buffer: Buffer): Promise<{
 
     const manifestResult = manifestSchema.safeParse(manifestJson);
     if (!manifestResult.success) {
-      return { success: false, error: { error: "INVALID_STRUCTURE", detail: `manifest.json: ${manifestResult.error.errors[0].message}` } };
+      return { success: false, error: { error: "INVALID_STRUCTURE", detail: `manifest.json: ${manifestResult.error.issues[0].message}` } };
     }
 
     const configResult = configSchema.safeParse(configJson);
     if (!configResult.success) {
-      return { success: false, error: { error: "INVALID_STRUCTURE", detail: `config.json: ${configResult.error.errors[0].message}` } };
+      return { success: false, error: { error: "INVALID_STRUCTURE", detail: `config.json: ${configResult.error.issues[0].message}` } };
     }
 
     // 5. Code & Security Analysis (Static check)
