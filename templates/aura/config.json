@@ -1,0 +1,24 @@
+{
+  "theme_name": "Aura Minimalist",
+  "global_styles": {
+    "colors": {
+      "primary": "#0D0D0D",
+      "background": "#FDFDFD",
+      "text": "#1A1A1A",
+      "accent": "#F5F5F5"
+    },
+    "fonts": ["Inter", "serif"]
+  },
+  "sections": [
+    {
+      "id": "aura_hero",
+      "type": "hero",
+      "label": "Banner Principal Aura",
+      "fields": {
+        "title": { "type": "text", "default": "Essence of Minimalism" },
+        "subtitle": { "type": "text", "default": "Curated collection for the modern soul." },
+        "button_text": { "type": "text", "default": "Shop Collection" }
+      }
+    }
+  ]
+}

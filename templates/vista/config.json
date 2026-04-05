@@ -1,0 +1,24 @@
+{
+  "theme_name": "Vista Modern",
+  "global_styles": {
+    "colors": {
+      "primary": "#2D3436",
+      "background": "#FFFFFF",
+      "text": "#1E272E",
+      "accent": "#FAFAFA"
+    },
+    "fonts": ["Outfit", "Inter"]
+  },
+  "sections": [
+    {
+      "id": "vista_hero",
+      "type": "hero",
+      "label": "Modern Living Banner",
+      "fields": {
+        "title": { "type": "text", "default": "Vision for Life" },
+        "subtitle": { "type": "text", "default": "Architectural furniture for modern spaces." },
+        "button_text": { "type": "text", "default": "View Catalog" }
+      }
+    }
+  ]
+}

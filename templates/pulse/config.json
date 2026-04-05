@@ -1,0 +1,24 @@
+{
+  "theme_name": "Pulse Tech",
+  "global_styles": {
+    "colors": {
+      "primary": "#00E0FF",
+      "background": "#050505",
+      "text": "#FFFFFF",
+      "accent": "#1A1A1A"
+    },
+    "fonts": ["Inter", "monospace"]
+  },
+  "sections": [
+    {
+      "id": "pulse_hero",
+      "type": "hero",
+      "label": "Tech Feature Banner",
+      "fields": {
+        "title": { "type": "text", "default": "Beyond Performance" },
+        "subtitle": { "type": "text", "default": "Next-gen tech for the digital era." },
+        "button_text": { "type": "text", "default": "Explore Gadgets" }
+      }
+    }
+  ]
+}
